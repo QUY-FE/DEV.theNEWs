@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/reponsive.css">
+
+    <title>Dev.theNEWS</title>
+</head>
+<body>
+    
+    <div class="App">
+        <div class="header grid wide">
+            <div class="innerHeader">
+                <!-- Navbar mobile -->
+                <div class="menu__mobile l-0 m-0">
+                    <div class="menu__mobile-overlayer"></div>
+                    <span class="menu__mobile-nav"><i class="fa-solid fa-bars"></i></span>
+                    <div class="Menu__mobile-wrapper  l-0">
+                        
+                        <h2 class="Menu__mobile-wrapper-heading">Menu</h2>
+                        <ul class="Menu__mobile-wrapper-list">
+                            <li class="Menu__mobile-wrapper-item">
+                                <a href="index.html" class="Menu__mobile-wrapper-link"><i class="fa-solid fa-house"></i> Trang chủ</a>
+                            </li>
+                            <li class="Menu__mobile-wrapper-item">
+                                <a href="" class="Menu__mobile-wrapper-link"><i class="fa-solid fa-robot"></i> AI</a>
+                            </li>
+                            <li class="Menu__mobile-wrapper-item">
+                                <a href="" class="Menu__mobile-wrapper-link"><i class="fa-solid fa-code"></i> Lập Trình</a>
+                            </li>
+                            <li class="Menu__mobile-wrapper-item">
+                                <a href="" class="Menu__mobile-wrapper-link"><i class="fa-solid fa-gear"></i> Thiết bị</a>
+                            </li>
+                            <li class="Menu__mobile-wrapper-item">
+                                <a href="" class="Menu__mobile-wrapper-link"><i class="fa-solid fa-gamepad"></i> Game</a>
+                            </li>
+                            <li class="Menu__mobile-wrapper-item">
+                                <a href="" class="Menu__mobile-wrapper-link">Review</a>
+                            </li>
+                        </ul>
+
+                        <span class="Menu__mobile-wrapper-goback"><i class="fa-solid fa-circle-xmark"></i></span>
+                    </div>
+                </div><!-- End Navbar mobile -->
+
+
+                <div class="innerHeader__logo">
+                    <a href="index.html" class="innerHeader__logo-link">
+                        Dev.theNEWS
+                    </a>
+                </div>  <!-- End logo -->
+            
+                    <nav class="innerHeader__menu ">
+                        <ul class="innerHeader__menu-list">
+                            <li class="innerHeader__menu-item">
+                                <a href="" class="innerHeader__menu-link">AI</a>
+                            </li>
+                            <li class="innerHeader__menu-item">
+                                <a href="" class="innerHeader__menu-link">Lập Trình</a>
+                            </li>
+                            <li class="innerHeader__menu-item">
+                                <a href="" class="innerHeader__menu-link">Thiết bị</a>
+                            </li>
+                            <li class="innerHeader__menu-item">
+                                <a href="" class="innerHeader__menu-link">Game</a>
+                            </li>
+                            <li class="innerHeader__menu-item">
+                                <a href="" class="innerHeader__menu-link">Review</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>  <!-- end menu -->
+                    <div class="mobile-search l-0 m-0">
+                        <span class="mobile-search-icon" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass" ></i></span>
+                    </div>
+                    <div id="searchMobile" class="mobile__search-wrapper">
+                        <input type="text" placeholder="Tìm kiếm..." class="mobile__search-wrapper-input">
+                        <span class="mobile__search-wrapper-icon"><i class="fa-solid fa-xmark" onclick="toggleSearch()"></i></span>
+                    </div>
+
+
+
+                    <div class="innerHeader__search ">
+                        <div class="innerHeader__with-search">
+                            <input type="text" class="innerHeader__search-input" placeholder="Tìm kiếm...">
+                            <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>  <!-- End search -->
+
+                    
+
+            </div><!-- End innerHeader -->
+            
+        </div> <!-- End header -->
+        <div class="banner" style="background-image: url(imgs/banner\ image.jpg);">
+            <div class="banner__content">
+                <h1 class="banner__title">Dev.theNEWS</h1>
+                <p class="banner__subtitle">Cập nhật tin công nghệ mới nhất, dành cho dân IT</p>
+                <a href="#" class="banner__btn">Khám phá ngay</a>
+            </div>
+        </div><!-- end banner -->
+        <div class="container">
+            <div class="content grid wide">
+                <div class="row">
+                    <div class="col l-8 m-12 c-12">
+                        <div class="wrapper">
+                            <div class="row">
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                <div class="col l-4 m-6 s-12">
+                                    <div class="post-card ">
+                                        <a href="#" class="post-card-link">
+                                            <img src="imgs/post img.jpg" alt="" class="post-card__img">
+                                            <div class="post-card__info">
+                                                <h2 class="post-card__info-heading">
+                                                    Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                                </h2>
+                                                <div class="post-card__info-time">11h23 12/04/2025</div>
+                                            </div>
+                                        </a>
+                                    </div><!-- end post card -->                                   
+                                </div> <!-- end col -->
+                                
+                            </div> <!-- end row -->
+                        </div><!-- end wrapper -->
+
+
+                    </div><!-- end l-8-->
+                    <div class="col l-4 m-12 c-12">
+                        <aside class="sidebar">
+                            <h1 class="sidebar__title">Bài viết mới nhất</h1>
+                            <ul class="posts__list">
+                                <li class="post__item">
+                                    <a href="#" class="post__link">🔥 Cách tối ưu hiệu suất React app</a>
+                                </li>
+                                <li class="post__item">
+                                    <a href="#" class="post__link">🧠 Hiểu rõ AI Gen Z đang dùng là gì</a>
+                                </li>
+                                <li class="post__item">
+                                    <a href="#" class="post__link">🎮 Top game indie hay nhất 2025</a>
+                                </li>
+                                <li class="post__item">
+                                    <a href="#" class="post__link">🛠️ Thiết bị nào đáng mua năm nay?</a>
+                                </li>
+                                <li class="post__item">
+                                    <a href="#" class="post__link">Tailwind làn gió mới giúp tối ưu dự án cho Dev</a>
+                                </li>
+                                <li class="post__item">
+                                    <a href="#" class="post__link">Top bàn phím cơ lập trình viên khuyên dùng </a>
+                                </li>
+                                <li class="post__item">
+                                    <a href="#" class="post__link">Tìm kiếm công việc qua Dev.theJob</a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div><!-- end l-4 -->
+
+
+                </div><!-- end row -->
+                
+            </div> <!-- End content -->
+        </div> <!-- End container -->
+        <footer class="footer">
+            <div class="innerFooter grid wide">
+                <div class="row">
+                    <div class="col l-3 m-3 c-12">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                        </ul>
+                    </div><!-- end col l-3 m-3 c-12 -->
+                    <div class="col l-3 m-3 c-12">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                        </ul>
+                    </div><!-- end col l-3 m-3 c-12 -->
+                    <div class="col l-3 m-3 c-12">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                        </ul>
+                    </div><!-- end col l-3 m-3 c-12 -->
+                    <div class="col l-3 m-3 c-12">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">12312312312</a>
+                            </li>
+                        </ul>
+                    </div><!-- end col l-3 m-3 c-12 -->
+                </div><!-- end row -->
+            </div> <!-- end innerFooter-->
+            <p class="footer__copyR">&copy; <span class="footer__time-copyR"></span> sản phẩm thuộc bản quyền của quy.nguyen  </p>
+        </footer><!-- end footer -->
+       
+
+    </div><!-- End APP -->
+    
+    <script src="main.js"></script>
+</body>
+</html>
