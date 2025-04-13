@@ -1,0 +1,41 @@
+# ========================
+# Ignore hệ thống
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Ignore của VS Code
+# ========================
+.vscode/
+
+# ========================
+# Ignore thư viện
+# ========================
+node_modules/
+src/assets/fontawesome/
+src/assets/fonts/
+vendor/
+
+# ========================
+# Ignore file build, minify
+# ========================
+dist/
+build/
+*.min.css
+*.min.js
+*.map
+
+# ========================
+# Ignore log
+# ========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ========================
+# Khác
+# ========================
+.env
+.env.local
