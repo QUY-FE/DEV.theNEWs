@@ -13,8 +13,8 @@ Thumbs.db
 # Ignore thư viện
 # ========================
 node_modules/
-src/assets/fontawesome/
-src/assets/fonts/
+src/assets/font/fontawesome-free-6.7.1-web/
+src/assets/font/
 vendor/
 
 # ========================

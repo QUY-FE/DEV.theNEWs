@@ -1,13 +1,13 @@
 :root {
     --text: #f0f2ff;
     --background-color: #3d3d3d;
-    --primary: #ffd154;
+    --primary: #3e79d8;
     --black: #333;
     --white: #fff;
     --shadow: 1px 1px 26px rgb(22,24,35);
     --width-seach: 300px;
     --height-header: 60px;
-    --hover-color: #fff2422d;
+    --hover-color: #3e79d8d8;
 }   
 
 html {

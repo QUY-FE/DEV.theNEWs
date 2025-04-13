@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/assets/imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/assets/styles/base.css">
     <link rel="stylesheet" href="src/assets/styles/main.css">
     <link rel="stylesheet" href="src/assets/styles/reponsive.css">
     <link rel="stylesheet" href="src/assets/styles/grid.css">
-
+    <link rel="stylesheet" href="src/assets/font/fontawesome-free-6.7.1-web/css/all.min.css">
     <title>Dev.theNEWS</title>
 </head>
 <body>
@@ -107,10 +108,14 @@
             <div class="content grid wide">
                 <div class="row">
                     <div class="col l-8 m-12 c-12">
-                        <div class="wrapper">
+                        <div class="content-wrapper">
+                            <h1 class="content-wrapper__heading">Bài viết nổi bật</h1>
                             <div class="row">
                                 <div class="col l-4 m-6 s-12">
                                     <div class="post-card ">
+
+                                        <div class="post-card-favourite"><i class="fa-solid fa-star"></i><span>Xem nhiều</span></div>
+
                                         <a href="#" class="post-card-link">
                                             <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
                                             <div class="post-card__info">
@@ -124,6 +129,8 @@
                                 </div> <!-- end col -->
                                 <div class="col l-4 m-6 s-12">
                                     <div class="post-card ">
+                                        <div class="post-card-favourite"><i class="fa-solid fa-star"></i><span>Xem nhiều</span></div>
+
                                         <a href="#" class="post-card-link">
                                             <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
                                             <div class="post-card__info">
@@ -137,6 +144,8 @@
                                 </div> <!-- end col -->
                                 <div class="col l-4 m-6 s-12">
                                     <div class="post-card ">
+                                        <div class="post-card-favourite"><i class="fa-solid fa-star"></i><span>Xem nhiều</span></div>
+
                                         <a href="#" class="post-card-link">
                                             <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
                                             <div class="post-card__info">
@@ -228,9 +237,41 @@
                                 </div> <!-- end col -->
                                
                             </div> <!-- end row -->
+                            <div class="content-wrapper-pages">
+                                <ul class="content-wrapper-pages__list">
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link"><i class="fa-solid fa-left-long"></i></a>
+                                    </li>
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link page__active">1</a>
+                                    </li>
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link">2</a>
+                                    </li>
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link">3</a>
+                                    </li>
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link">4</a>
+                                    </li>
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link">5</a>
+                                    </li>
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link">6</a>                                        
+                                    </li>
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link">...</a>                                       
+                                    </li>
+                                    <li class="content-wrapper-pages__item">
+                                        <a href="#" class="content-wrapper-link"><i class="fa-solid fa-right-long"></i></a>                                   
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                            
                         </div><!-- end wrapper -->
-
-
                     </div><!-- end l-8-->
                     <div class="col l-4 m-12 c-12">
                         <aside class="sidebar">
@@ -260,16 +301,101 @@
                             </ul>
                         </aside>
                     </div><!-- end l-4 -->
-
-
                 </div><!-- end row -->
-                
             </div> <!-- End content -->
+
+            <div class="recomment ">
+                <div class="recommnet-wrapper grid wide">
+                    <h1 class="recommnet-wrapper__heading">Bài viết liên quan</h1>
+                    <div class="row">
+                        <div class="col l-2 m-4 s-12">
+                            <div class="post-card ">
+                                <a href="#" class="post-card-link">
+                                    <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
+                                    <div class="post-card__info">
+                                        <h2 class="post-card__info-heading">
+                                            Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                        </h2>
+                                        <div class="post-card__info-time">11h23 12/04/2025</div>
+                                    </div>
+                                </a>
+                            </div><!-- end post card -->                                   
+                        </div> <!-- end col -->
+                        <div class="col l-2 m-4 s-12">
+                            <div class="post-card ">
+                                <a href="#" class="post-card-link">
+                                    <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
+                                    <div class="post-card__info">
+                                        <h2 class="post-card__info-heading">
+                                            Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                        </h2>
+                                        <div class="post-card__info-time">11h23 12/04/2025</div>
+                                    </div>
+                                </a>
+                            </div><!-- end post card -->                                   
+                        </div> <!-- end col --> 
+                        <div class="col l-2 m-4 s-12">
+                            <div class="post-card ">
+                                <a href="#" class="post-card-link">
+                                    <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
+                                    <div class="post-card__info">
+                                        <h2 class="post-card__info-heading">
+                                            Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                        </h2>
+                                        <div class="post-card__info-time">11h23 12/04/2025</div>
+                                    </div>
+                                </a>
+                            </div><!-- end post card -->                                   
+                        </div> <!-- end col -->  
+                        <div class="col l-2 m-4 s-12">
+                            <div class="post-card ">
+                                <a href="#" class="post-card-link">
+                                    <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
+                                    <div class="post-card__info">
+                                        <h2 class="post-card__info-heading">
+                                            Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                        </h2>
+                                        <div class="post-card__info-time">11h23 12/04/2025</div>
+                                    </div>
+                                </a>
+                            </div><!-- end post card -->                                   
+                        </div> <!-- end col --> 
+                        <div class="col l-2 m-4 s-12">
+                            <div class="post-card ">
+                                <a href="#" class="post-card-link">
+                                    <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
+                                    <div class="post-card__info">
+                                        <h2 class="post-card__info-heading">
+                                            Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                        </h2>
+                                        <div class="post-card__info-time">11h23 12/04/2025</div>
+                                    </div>
+                                </a>
+                            </div><!-- end post card -->                                   
+                        </div> <!-- end col --> 
+                        <div class="col l-2 m-4 s-12">
+                            <div class="post-card ">
+                                <a href="#" class="post-card-link">
+                                    <img src="src/assets/imgs/post img.jpg" alt="" class="post-card__img">
+                                    <div class="post-card__info">
+                                        <h2 class="post-card__info-heading">
+                                            Chỉ vài tuần nữa, iPhone sẽ tăng giá vì thuế quan?
+                                        </h2>
+                                        <div class="post-card__info-time">11h23 12/04/2025</div>
+                                    </div>
+                                </a>
+                            </div><!-- end post card -->                                   
+                        </div> <!-- end col --> 
+                    </div><!-- end row -->
+                    <a href="#" class="recomment-wrapper__btn--show-more">Xem thêm <i class="fa-solid fa-right-from-bracket"></i> </a>
+                </div><!-- end recomment-wrapper -->
+            </div><!-- end recomment -->
         </div> <!-- End container -->
         <footer class="footer">
             <div class="innerFooter grid wide">
                 <div class="row">
                     <div class="col l-3 m-3 c-12">
+                        <h2 class="innerFooter__heading">Liên hệ</h2>
                         <ul class="footer__list">
                             <li class="footer__item">
                                 <a href="#" class="footer__link">12312312312</a>
@@ -286,6 +412,7 @@
                         </ul>
                     </div><!-- end col l-3 m-3 c-12 -->
                     <div class="col l-3 m-3 c-12">
+                        <h2 class="innerFooter__heading">Liên hệ</h2>
                         <ul class="footer__list">
                             <li class="footer__item">
                                 <a href="#" class="footer__link">12312312312</a>
@@ -302,6 +429,7 @@
                         </ul>
                     </div><!-- end col l-3 m-3 c-12 -->
                     <div class="col l-3 m-3 c-12">
+                        <h2 class="innerFooter__heading">Liên hệ</h2>
                         <ul class="footer__list">
                             <li class="footer__item">
                                 <a href="#" class="footer__link">12312312312</a>
@@ -318,6 +446,7 @@
                         </ul>
                     </div><!-- end col l-3 m-3 c-12 -->
                     <div class="col l-3 m-3 c-12">
+                        <h2 class="innerFooter__heading">Liên hệ</h2>
                         <ul class="footer__list">
                             <li class="footer__item">
                                 <a href="#" class="footer__link">12312312312</a>
