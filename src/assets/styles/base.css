@@ -26,11 +26,20 @@ html {
 body {
     background-color: var(--background-color);
     color: var(--text);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode {
+    --text: #f0f2ff;
+    --background-color: #3d3d3d;
+}
+body.light-mode {
+    --text: #0f0f0f;
+    --background-color:#f0f2ff;
 }
 
 a[href] {
     text-decoration: none;
-    
 }
 
 ul,li {
@@ -72,4 +81,9 @@ button,input {
 }
 .btn:hover {
     background-color: #ffd154e0;
+}
+
+.toggleMode {
+    width: 30px;
+    height: 30px;
 }

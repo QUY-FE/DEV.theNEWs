@@ -1,0 +1,12 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "2312",
+            "favourite": true,
+            "image": "src/assets/imgs/post img.jpg",
+            "time": "11h23 12/04/2025"
+        }
+    ]
+}
+  
