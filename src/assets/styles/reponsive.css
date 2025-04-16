@@ -1,6 +1,10 @@
 /* modile */
 @media all and (max-width: 767px) {
 
+    .toggleMode {
+        width: 30px;
+        }
+
 
     .innerHeader {
         justify-content: space-between;
@@ -50,6 +54,10 @@
 
     .content {
         flex-direction: column;
+    }
+    
+    .content-wrapper-pages {
+        position: relative;
     }
 
     .post-card {
