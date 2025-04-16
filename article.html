@@ -1,206 +1,359 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="src/assets/imgs/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="src/assets/styles/base.css">
-    <link rel="stylesheet" href="src/assets/styles/main.css">
-    <link rel="stylesheet" href="src/assets/styles/reponsive.css">
-    <link rel="stylesheet" href="src/assets/styles/grid.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/imgs/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/assets/styles/base.css" />
+    <link rel="stylesheet" href="src/assets/styles/main.css" />
+    <link rel="stylesheet" href="src/assets/styles/reponsive.css" />
+    <link rel="stylesheet" href="src/assets/styles/grid.css" />
     <link rel="stylesheet" href="src/assets/styles/article.css">
-    <link rel="stylesheet" href="src/assets/font/fontawesome-free-6.7.1-web/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="src/assets/font/fontawesome-free-6.7.1-web/css/all.min.css"
+    />
     <title>Dev.theNEWS</title>
-</head>
-<body>
-    
+  </head>
+  <body class="light-mode">
     <div class="App">
-        <div class="header grid wide" >
-            <div class="innerHeader">
-                <!-- Navbar mobile -->
-                <div class="menu__mobile l-0 m-0">
-                    <div class="menu__mobile-overlayer"></div>
-                    <span class="menu__mobile-nav"><i class="fa-solid fa-bars"></i></span>
-                    <div class="menu__mobile-wrapper  l-0">
-                        <h2 class="menu__mobile-wrapper-heading">Menu</h2>
-                        <ul class="menu__mobile-wrapper-list">
-                            <li class="menu__mobile-wrapper-item">
-                                <a href="index.html" class="menu__mobile-wrapper-link"><i class="fa-solid fa-house"></i> Trang chủ</a>
-                            </li>
-                            <li class="menu__mobile-wrapper-item">
-                                <a href="#" class="menu__mobile-wrapper-link"><i class="fa-solid fa-robot"></i> AI</a>
-                            </li>
-                            <li class="menu__mobile-wrapper-item">
-                                <a href="#" class="menu__mobile-wrapper-link"><i class="fa-solid fa-code"></i> Lập Trình</a>
-                            </li>
-                            <li class="menu__mobile-wrapper-item">
-                                <a href="#" class="menu__mobile-wrapper-link"><i class="fa-solid fa-gear"></i> Thiết bị</a>
-                            </li>
-                            <li class="menu__mobile-wrapper-item">
-                                <a href="#" class="menu__mobile-wrapper-link"><i class="fa-solid fa-gamepad"></i> Game</a>
-                            </li>
-                            <li class="menu__mobile-wrapper-item">
-                                <a href="#" class="menu__mobile-wrapper-link">Review</a>
-                            </li>
-                        </ul>
-                        <span class="menu__mobile-wrapper-goback"><i class="fa-solid fa-circle-xmark"></i></span>
-                    </div>
-                </div><!-- End Navbar mobile -->
+      <div class="toggleMode">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <path
+            d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+          />
+        </svg>
+      </div>
+      <!-- toggleMode end -->
+      <div class="header grid wide">
+        <div class="innerHeader">
+          <!-- Navbar mobile -->
+          <div class="menu__mobile l-0 m-0">
+            <div class="menu__mobile-overlayer"></div>
+            <span class="menu__mobile-nav">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="menu__mobile-nav-icon"
+              >
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </span>
+            <div class="menu__mobile-wrapper l-0">
+              <h2 class="menu__mobile-wrapper-heading">Menu</h2>
+              <ul class="menu__mobile-wrapper-list">
+                <li class="menu__mobile-wrapper-item">
+                  <a href="index.html" class="menu__mobile-wrapper-link"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li class="menu__mobile-wrapper-item">
+                  <a href="#" class="menu__mobile-wrapper-link">AI</a>
+                </li>
+                <li class="menu__mobile-wrapper-item">
+                  <a href="#" class="menu__mobile-wrapper-link">Lập Trình</a>
+                </li>
+                <li class="menu__mobile-wrapper-item">
+                  <a href="#" class="menu__mobile-wrapper-link">Thiết bị</a>
+                </li>
+                <li class="menu__mobile-wrapper-item">
+                  <a href="#" class="menu__mobile-wrapper-link">Game</a>
+                </li>
+                <li class="menu__mobile-wrapper-item">
+                  <a href="#" class="menu__mobile-wrapper-link">Review</a>
+                </li>
+              </ul>
+              <span class="menu__mobile-wrapper-goback">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  class="menu__mobile-wrapper-goback-icon"
+                >
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <!-- End Navbar mobile -->
 
+          <div class="innerHeader__logo">
+            <a href="index.html" class="innerHeader__logo-link">
+              Dev.theNEWS
+            </a>
+          </div>
+          <!-- End logo -->
 
-                <div class="innerHeader__logo">
-                    <a href="index.html" class="innerHeader__logo-link">
-                        Dev.theNEWS
-                    </a>
-                </div>  <!-- End logo -->
-            
-                    <nav class="innerHeader__menu ">
-                        <ul class="innerHeader__menu-list">
-                            <li class="innerHeader__menu-item">
-                                <a href="" class="innerHeader__menu-link">AI</a>
-                            </li>
-                            <li class="innerHeader__menu-item">
-                                <a href="" class="innerHeader__menu-link">Lập Trình</a>
-                            </li>
-                            <li class="innerHeader__menu-item">
-                                <a href="" class="innerHeader__menu-link">Thiết bị</a>
-                            </li>
-                            <li class="innerHeader__menu-item">
-                                <a href="" class="innerHeader__menu-link">Game</a>
-                            </li>
-                            <li class="innerHeader__menu-item">
-                                <a href="" class="innerHeader__menu-link">Review</a>
-                            </li>
-                            
-                        </ul>
-                    </nav>  <!-- end menu -->
-                    <div class="mobile-search l-0 m-0">
-                        <span class="mobile-search-icon" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass" ></i></span>
-                    </div>
-                    <div id="searchMobile" class="mobile__search-wrapper">
-                        <input type="text" placeholder="Tìm kiếm..." class="mobile__search-wrapper-input innerHeader__search-input">
-                        <span class="mobile__search-wrapper-icon"><i class="fa-solid fa-xmark" onclick="toggleSearch()"></i></span>
-                    </div>
+          <nav class="innerHeader__menu">
+            <ul class="innerHeader__menu-list">
+              <li class="innerHeader__menu-item">
+                <a href="" class="innerHeader__menu-link">AI</a>
+              </li>
+              <li class="innerHeader__menu-item">
+                <a href="" class="innerHeader__menu-link">Lập Trình</a>
+              </li>
+              <li class="innerHeader__menu-item">
+                <a href="" class="innerHeader__menu-link">Thiết bị</a>
+              </li>
+              <li class="innerHeader__menu-item">
+                <a href="" class="innerHeader__menu-link">Game</a>
+              </li>
+              <li class="innerHeader__menu-item">
+                <a href="#" class="innerHeader__menu-link">Review</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end menu -->
+          <!-- search mobile -->
+          <div class="mobile-search l-0 m-0">
+            <span class="mobile-search-icon" onclick="toggleSearch()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="seach-icon"
+              >
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                />
+              </svg>
+            </span>
+          </div>
+          <div id="searchMobile" class="mobile__search-wrapper">
+            <input
+              type="text"
+              placeholder="Tìm kiếm..."
+              class="mobile__search-wrapper-input innerHeader__search-input"
+            />
+            <span class="mobile__search-wrapper-icon" onclick="toggleSearch()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                class="seach-icon"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </span>
+          </div>
 
+          <!-- search pc -->
+          <div class="innerHeader__search">
+            <div class="innerHeader__with-search">
+              <input
+                type="text"
+                class="innerHeader__search-input"
+                id="searchInput"
+                placeholder="Tìm kiếm..."
+              />
+              <button class="btn-search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="innerHeader__search-icon"
+                >
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- End search -->
+        </div>
+        <!-- End innerHeader -->
+      </div>
+      <!-- End header -->
 
+      <div class="container">
+        <div id="posts" class="content grid wide">
+          <div class="row">
+            <div class="col l-12 m-12 c-12">  
+              <article class="article">
+                <h1 class="article__title" id="article-title">Đang tải...</h1>
+                <p class="article__time" id="article-time"></p>
+                <div class="article-wrapper__img">
+                    <img src="" alt="" id="article-img" class="article__img" />
+                </div>
+                <div class="article__content" id="article-content">
+                  <!-- Nội dung bài viết sẽ được chèn bằng JS -->
+                </div>
+              </article>
+            </div>
+            <!-- end col l-12 m-12 c-12 -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- End content -->
+        <div class="recomment">
+          <div class="recommnet-wrapper grid wide">
+            <h1 class="recommnet-wrapper__heading">Bài viết liên quan</h1>
+            <div class="row"></div>
+            <!-- end row -->
+            <a href="#" class="recomment-wrapper__btn-show-more"
+              >Xem thêm
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="recomment-wrapper__btn-show-more-icon"
+              >
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path
+                  d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                />
+              </svg>
+            </a>
+          </div>
+          <!-- end recomment-wrapper -->
+        </div>
+        <!-- end recomment -->
+      </div>
+      <!-- End container -->
+      <footer class="footer">
+        <div class="innerFooter grid wide">
+          <div class="row">
+            <div class="col l-3 m-3 c-12">
+              <h2 class="innerFooter__heading">Liên hệ</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      class="footer__item-icon"
+                    >
+                      <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                      <path
+                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                      />
+                    </svg>
+                    quysamp205@gmail.com
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      class="footer__item-icon"
+                    >
+                      <path
+                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                      />
+                    </svg>
+                    0869498816
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                      class="footer__item-icon"
+                    >
+                      <path
+                        d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+                      />
+                    </svg>
+                    Dev.theNews
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      class="footer__item-icon"
+                    >
+                      <path
+                        d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                      />
+                    </svg>
+                    facebook
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- end col l-3 m-3 c-12 -->
+            <div class="col l-3 m-3 c-12">
+              <h2 class="innerFooter__heading">Nhà cung cấp</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link"></a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link"></a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link"></a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link"></a>
+                </li>
+              </ul>
+            </div>
+            <!-- end col l-3 m-3 c-12 -->
+            <div class="col l-3 m-3 c-12">
+              <h2 class="innerFooter__heading">Tài khoản</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Đăng ký</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end col l-3 m-3 c-12 -->
+            <div class="col l-3 m-3 c-12">
+              <h2 class="innerFooter__heading">Các trang khác</h2>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link" target="_blank"
+                    >Dev.theJob</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link" target="_blank"
+                    >Dev.theSocial</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link" target="_blank"
+                    >Dev.theMessage</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- end col l-3 m-3 c-12 -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end innerFooter-->
+        <p class="footer__copyR">
+          &copy; <span class="footer__time-copyR"></span> sản phẩm thuộc bản
+          quyền của quy.nguyen
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- End APP -->
 
-                    <div class="innerHeader__search ">
-                        <div class="innerHeader__with-search">
-                            <input type="text" class="innerHeader__search-input" id="searchInput" placeholder="Tìm kiếm...">
-                            <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                    </div>  <!-- End search -->
-
-                    
-
-                    
-            </div><!-- End innerHeader -->
-        </div> <!-- End header -->
-        <div class="container" style="margin-top: calc(var(--height-header) + 30px);">
-            <div id="posts" class="content grid wide">
-                <div class="row">
-                    <div class="col l-12 m-12 c-12">
-                        <article class="article">
-                            <h1 class="article__title" id="article-title">Đang tải...</h1>
-                            <p class="article__time" id="article-time"></p>
-                            <img src="" alt="" id="article-img" class="article__img">
-                            <div class="article__content" id="article-content">
-                              <!-- Nội dung bài viết sẽ được chèn bằng JS -->
-                            </div>
-                          </article>
-                    </div><!-- end l-8-->
-                </div><!-- end row -->
-            </div> <!-- End content -->
-
-            <div class="recomment">
-                <div class="recommnet-wrapper grid wide">
-                    <h1 class="recommnet-wrapper__heading">Bài viết liên quan</h1>
-                    <div class="row"></div><!-- end row -->
-                    <a href="#" class="recomment-wrapper__btn--show-more">Xem thêm <i class="fa-solid fa-right-from-bracket"></i> </a>
-                </div><!-- end recomment-wrapper -->
-            </div><!-- end recomment -->
-        </div> <!-- End container -->
-
-
-
-        
-        <footer class="footer">
-            <div class="innerFooter grid wide">
-                <div class="row">
-                    <div class="col l-3 m-3 c-12">
-                        <h2 class="innerFooter__heading">Liên hệ</h2>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">email: quysamp205@gmail.com</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Số điện thoại: 0869498816</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">zalo: 0869498816 (Quý Nguyễn)</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i> facebook</a>
-                            </li>
-                        </ul>
-                    </div><!-- end col l-3 m-3 c-12 -->
-                    <div class="col l-3 m-3 c-12">
-                        <h2 class="innerFooter__heading">Nhà cung cấp</h2>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link"></a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link"></a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link"></a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link"></a>
-                            </li>
-                        </ul>
-                    </div><!-- end col l-3 m-3 c-12 -->
-                    <div class="col l-3 m-3 c-12">
-                        <h2 class="innerFooter__heading">Tài khoản</h2>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Đăng ký</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Đăng nhập</a>
-                            </li>
-                            
-                        </ul>
-                    </div><!-- end col l-3 m-3 c-12 -->
-                    <div class="col l-3 m-3 c-12">
-                        <h2 class="innerFooter__heading">Các trang khác</h2>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Dev.theJob</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Dev.theSocial</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Dev.theMessage</a>
-                            </li>
-                           
-                        </ul>
-                    </div><!-- end col l-3 m-3 c-12 -->
-                </div><!-- end row -->
-            </div> <!-- end innerFooter-->
-            <p class="footer__copyR">&copy; <span class="footer__time-copyR"></span> sản phẩm thuộc bản quyền của quy.nguyen  </p>
-        </footer><!-- end footer -->
-       
-
-    </div><!-- End APP -->
-    
-    <script src="src/assets/scripts/main.js"></script>
+    <script src="src/assets/scripts/main.js" defer></script>
     <script type="module" src="src/assets/scripts/data.js"></script>
+    <script type="module" src="src/assets/scripts/banner.js" defer></script>
     <script type="module" src="src/assets/scripts/toggleMode.js" defer></script>
     <script type="module" src="src/assets/scripts/recommet.js" defer></script>
-    <script type="module" src="src/assets/scripts/navbar.js" defer></script> 
-    <script type="module" src="src/assets/scripts/render.js"></script>
-</body>
+    <script type="module" src="src/assets/scripts/navbar.js" defer></script>
+    <script type="module" src="src/assets/scripts/render.js" defer></script>
+  </body>
 </html>
